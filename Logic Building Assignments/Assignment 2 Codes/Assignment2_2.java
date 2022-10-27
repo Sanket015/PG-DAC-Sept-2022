@@ -1,0 +1,514 @@
+// Assignment No.2_2
+
+import java.util.Scanner;
+
+class Assignment2_2
+{
+  public static void main(String[] args)
+  {
+	Scanner sc = new Scanner(System.in);
+    System.out.print("Enter no. of rows:");
+	int r = sc.nextInt();
+	
+	//1
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *
+    **
+    ***
+    ****
+    *****
+	*/
+	
+	//2
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *
+       **
+      ***
+     ****
+    *****
+	*/
+	
+	//3
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *****
+    ****
+    ***
+    **
+    *
+	*/
+	
+	//4
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *****
+     ****
+      ***
+       **
+        *
+	*/
+	
+	//5
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=r-i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+        for(int j=1;j<i;j++)
+		{
+			System.out.print("*");
+		}		
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *
+       ***
+      *****
+     *******
+    *********
+	*/
+	
+	//6
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		for(int j=1;j<(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *********
+     *******
+      *****
+       ***
+        *
+	*/
+	
+	//7
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<=r-i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+        for(int j=1;j<i;j++)
+		{
+			System.out.print("*");
+		}		
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		for(int j=1;j<(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *
+       ***
+      *****
+     *******
+    *********
+     *******
+      *****
+       ***
+        *
+	*/
+	
+	//8
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *
+    **
+    ***
+    ****
+    *****
+    ****
+    ***
+    **
+    *
+	*/
+	
+	//9
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *
+       **
+      ***
+     ****
+    *****
+     ****
+      ***
+       **
+        *
+	*/
+	
+	//10
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=r;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *****
+       *****
+      *****
+     *****
+    *****
+	*/
+	
+	//11
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=r;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *****
+     *****
+      *****
+       *****
+        *****
+	*/
+	
+	//12
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *****
+    ****
+    ***
+    **
+    *
+    **
+    ***
+    ****
+    *****
+    */
+	
+	//13
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("*");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *****
+     ****
+      ***
+       **
+        *
+       **
+      ***
+     ****
+    *****
+    */
+	
+	//14
+	/*
+	for(int i=1;i<r;i++)
+	{
+		for(int j=1;j<i;j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=(r+1)-i;j++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println();
+	}
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			System.out.print("* ");
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    * * * * *
+     * * * *
+      * * *
+       * *
+        *
+       * *
+      * * *
+     * * * *
+    * * * * *
+	*/
+	
+	//15
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=i;j++)
+		{
+			if(i==3&&j==2||i==4&&j==2||i==4&&j==3)
+			{
+				System.out.print(" ");
+			}
+			else
+			{
+				System.out.print("*");
+			}
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+    *
+    **
+    * *
+    *  *
+    *****
+	*/
+	
+	//16
+	/*
+	for(int i=1;i<=r;i++)
+	{
+		for(int j=1;j<=(r-i);j++)
+		{
+			System.out.print(" ");
+		}
+		for(int j=1;j<=i;j++)
+		{
+			if(i==3&&j==2||i==4&&j==2||i==4&&j==3)
+			{
+				System.out.print(" ");
+			}
+			else
+			{
+				System.out.print("*");
+			}
+		}
+		System.out.println();
+	}
+	*/
+	
+	/*
+	Enter no. of rows:5
+        *
+       **
+      * *
+     *  *
+    *****
+	*/
+    
+//-------------------------------------------------------------------------
+	
+  }
+}
